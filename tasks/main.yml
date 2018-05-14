@@ -87,8 +87,3 @@
           or mongodb_replication_replset == '') )
   no_log: true
   tags: [mongodb]
-
-- name: Include MMS Agent configuration
-  include: mms-agent.yml
-  when: mongodb_mms_api_key != ""
-  tags: [mongodb]
